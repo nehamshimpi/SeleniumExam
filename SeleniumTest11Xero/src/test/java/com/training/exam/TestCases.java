@@ -6,6 +6,7 @@ import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -13,10 +14,10 @@ import com.relevantcodes.extentreports.LogStatus;
 public class TestCases extends ReusableMethods {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
-
+		TC8C();
 		//TC1A();
-		TC1B();		
-		TC1C();
+		//TC1B();		
+		//TC1C();
 		/*TC1D(); 
 		TC2A();
 		TC2B();
@@ -509,6 +510,7 @@ public class TestCases extends ReusableMethods {
 		name.sendKeys("Self");
 		WebElement country = findElement(By.xpath("//input[@id='countryCmb-inputEl']"), "country");
 		country.sendKeys("United States");
+		
 		WebElement timeselect = findElement(By.xpath("//*[@id=\"cmbTimeZone-inputEl\"]"),"Timeselect");
 		timeselect.sendKeys("(UTC-08:00) Pacific Time (US & Canada)");
 		WebElement industry = findElement(By.xpath("//input[@id='industrysearchcombofield-1025-inputEl']"), "industry");
@@ -517,10 +519,10 @@ public class TestCases extends ReusableMethods {
 		WebElement buyNow = findElement(By.id("simplebutton-1035"), "BuyNow");
 		buyNow.click();
 		//String selectplan = findElement(By.xpath("//span[contains(text(),'Select a plan')]"), "Select plan").getText();
-		//System.out.println(validate(selectplan,"Select a plan"));
+		//ystem.out.println(validate(selectplan,"Select a plan"));
 
 		Thread.sleep(3000);
-		WebElement Early = findElement(By.xpath("//section[@id='Early']//div[@class='xui-styledcheckboxradio--radio']"),"Radio Button");
+		WebElement Early = findElement(By.xpath("//section[1]//div[1]//label[1]//div[1]"),"Radio Button");
 
 		Early.click();
 
