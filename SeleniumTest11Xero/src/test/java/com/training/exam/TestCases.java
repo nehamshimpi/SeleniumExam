@@ -4,10 +4,11 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -64,7 +65,7 @@ public class TestCases extends ReusableMethods {
 
 			String string1=findElement(By.xpath("//p[contains(text(),'Your email or password is incorrect')]"), "Error msg").getText();
 			String string2="Your email or password is incorrect";
-			Assert.assertEquals(string1,string2);
+			validateText(string1,string2);
 			System.out.println("Error message :" + string1);
 			logger.log( LogStatus.PASS, "Error message :" + string1);
 		}catch(Exception E)
@@ -94,7 +95,7 @@ public class TestCases extends ReusableMethods {
 
 			String string1=findElement(By.xpath("//p[contains(text(),'Your email or password is incorrect')]"), "Error msg").getText();
 			String string2="Your email or password is incorrect";
-			Assert.assertEquals(string1,string2);
+			validateText(string1,string2);
 			System.out.println("Error message :" + string1);
 			logger.log( LogStatus.PASS, "Error message :" + string1);
 		}catch(Exception E)
@@ -234,7 +235,7 @@ public class TestCases extends ReusableMethods {
 				driver.switchTo().window(child_window);
 				System.out.println(driver.switchTo().window(child_window).getTitle());
 				String name=driver.switchTo().window(child_window).getTitle();
-				Assert.assertEquals(name, "Terms of Use | Xero US");
+				validateText(name, "Terms of Use | Xero US");
 				driver.close();
 			}
 
