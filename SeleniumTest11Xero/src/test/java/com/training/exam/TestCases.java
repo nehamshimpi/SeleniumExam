@@ -15,11 +15,11 @@ import com.relevantcodes.extentreports.LogStatus;
 public class TestCases extends ReusableMethods {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
-		TC8C();
-		//TC1A();
-		//TC1B();		
-		//TC1C();
-		/*TC1D(); 
+		
+		TC1A();
+		TC1B();		
+		TC1C();
+		TC1D(); 		
 		TC2A();
 		TC2B();
 		TC2C();
@@ -31,7 +31,7 @@ public class TestCases extends ReusableMethods {
 		TC8A();
 		TC8B();
 		TC8C();	
-		TC10A();*/
+		TC10A();
 
 	}
 
