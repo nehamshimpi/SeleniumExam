@@ -52,7 +52,7 @@ public class TestCases extends ReusableMethods {
 			initializeDriver();
 			launchUrl("https://login.xero.com/");
 			extentReports("tc1B");
-			String[][] recdata=readExcel("D:\\JavaPrograms\\SeleniumTestXero\\ExcelData\\Data1.xls","Data1.xls","Sheet1");
+			String[][] recdata=readExcel("C:\\Users\\nehas\\git\\newRepository\\SeleniumTest11Xero\\ExcelData\\Data1.xls","Data1.xls","Sheet1");
 			//Login("kharoteneha29@gmail.com","neha");
 			WebElement un = findElement(By.xpath("//input[@placeholder='Email address']"), "Username");
 			enterText(un, "username", recdata[1][0]);
